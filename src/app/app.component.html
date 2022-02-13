@@ -1,0 +1,20 @@
+<div class="contenitore">
+
+  <h1>Aggiungi alla lista</h1>
+
+  <div>
+    <label>inserisci qualcosa </label>
+    <input type="text" [(ngModel)]="testo" placeholder="scrivi qua" >
+    <button (click)="onClick()">SAVE</button>
+  </div>
+
+
+  <h1>Elementi della lista</h1>
+
+  <div>
+      <p *ngFor="let item of list; index as i" class="elem_risultato">
+        {{i}}- {{item}}
+      </p>
+  </div>
+
+</div>
